@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="magicApp.pointBoxView">
+	 <Grid x:Name="pointGridLayout" Padding="10" BackgroundColor='Green' >
+        <Grid.RowDefinitions>
+            <RowDefinition Height = "*" />
+            <RowDefinition Height = "5*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width = "*" />
+            <ColumnDefinition Width = "5*" />
+            <ColumnDefinition Width = "*" />
+        </Grid.ColumnDefinitions>
+
+        <Label x:Name="playerNameLabel" Text= "Player 1" Grid.Row = "0" Grid.ColumnSpan="3" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" />
+        <Label x:Name="scoreValue" Text = "20" Grid.Row="1" Grid.ColumnSpan="3" FontSize="50" VerticalTextAlignment="Center" FontAttributes= "Bold" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+        <Button x:Name="addPoint" Text="+" Grid.Column="0" Grid.Row="1" BackgroundColor="Yellow" TextColor= "Black" FontSize="50" />
+        <Button x:Name="subtractPoint" Text="-" Grid.Column="2" Grid.Row="1" BackgroundColor="Yellow" TextColor= "Black" FontSize="50"/>
+   
+    </Grid>
+</ContentView>
